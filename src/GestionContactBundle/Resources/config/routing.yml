@@ -1,0 +1,3 @@
+gestion_contact_homepage:
+    path:     /
+    defaults: { _controller: GestionContactBundle:Default:index }
