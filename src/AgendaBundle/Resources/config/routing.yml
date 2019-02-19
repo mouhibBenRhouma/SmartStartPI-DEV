@@ -1,0 +1,42 @@
+agenda_homepage:
+    path:     /
+    defaults: { _controller: AgendaBundle:Default:index }
+agenda_homepage:
+    path:     /
+    defaults: { _controller: AgendaBundle:Default:index }
+
+agenda_create:
+    path:     /create
+    defaults: { _controller: AgendaBundle:Agenda:create }
+
+agenda_read:
+    path:     /read
+    defaults: { _controller: AgendaBundle:Agenda:read }
+
+agenda_update:
+    path:     /update/{id}
+    defaults: { _controller: AgendaBundle:Agenda:update }
+
+agenda_delete:
+    path:     /delete/{id}
+    defaults: { _controller: AgendaBundle:Agenda:delete }
+
+taches_create:
+    path:     /createTaches
+    defaults: { _controller: AgendaBundle:Taches:create }
+
+taches_read:
+    path:     /readTaches
+    defaults: { _controller: AgendaBundle:Taches:read }
+
+taches_update:
+    path:     /updateTaches/{id}
+    defaults: { _controller: AgendaBundle:Taches:update }
+
+taches_delete:
+    path:     /deleteTaches/{id}
+    defaults: { _controller: AgendaBundle:Taches:delete }
+
+
+
+

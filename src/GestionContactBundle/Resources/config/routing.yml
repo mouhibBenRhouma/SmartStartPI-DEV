@@ -1,3 +1,31 @@
+gestion_contact_reclamation:
+    resource: "@GestionContactBundle/Resources/config/routing/reclamation.yml"
+    prefix:   /reclamation
+
 gestion_contact_homepage:
     path:     /
     defaults: { _controller: GestionContactBundle:Default:index }
+reclamation_index:
+    path:     /
+    defaults: { _controller: "GestionContactBundle:Reclamation:index" }
+    methods:  GET
+
+reclamation_show:
+    path:     /{id}/show
+    defaults: { _controller: "GestionContactBundle:Reclamation:show" }
+    methods:  GET
+
+reclamation_new:
+    path:     /new
+    defaults: { _controller: "GestionContactBundle:Reclamation:new" }
+    methods:  [GET, POST]
+
+reclamation_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "GestionContactBundle:Reclamation:edit" }
+    methods:  [GET, POST]
+
+reclamation_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "GestionContactBundle:Reclamation:delete" }
+    methods:  DELETE

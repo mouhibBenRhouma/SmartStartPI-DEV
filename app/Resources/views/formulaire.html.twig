@@ -13,11 +13,12 @@ Purchase:
 <!--<![endif]-->
 
 
-<!-- Mirrored from www.webstrot.com/html/jobpro/job_light/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Feb 2019 18:49:34 GMT -->
+<!-- Mirrored from www.webstrot.com/html/jobpro/job_light/add_postin.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Feb 2019 18:49:34 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Agenda</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="description" content="Job Pro" />
     <meta name="keywords" content="Job Pro" />
@@ -25,29 +26,62 @@ Purchase:
     <meta name="MobileOptimized" content="320" />
     <!--srart theme style -->
     <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/animate.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/bootstrap.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/font-awesome.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/fonts.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/reset.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/owl.carousel.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/owl.theme.default.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/flaticon.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/style_II.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/responsive2.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/bootstrap.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/font-awesome.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/fonts.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/reset.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/owl.carousel.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/owl.theme.default.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/flaticon.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/style_II.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/css/responsive2.css')}}" />
     <!-- favicon links -->
-    <link rel="shortcut icon" type="image/png" href="{{ asset('bundles/images/header/favicon.ico') }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ asset('bundles/images/header/favicon.ico')}}" />
 </head>
-
 
 <body>
 <!-- preloader Start -->
+{% block header %}
 <div id="preloader">
-    <div id="status"><img src="{{ asset('bundles/images/header/loadinganimation.gif') }}" id="preloader_image" alt="loader">
+    <div id="status"><img src="{{ asset('bundles/images/header/loadinganimation.gif')}}" id="preloader_image" alt="loader">
     </div>
 </div>
 <!-- Top Scroll End -->
 <!-- Top Header Wrapper Start -->
-
+<div class="jp_top_header_main_wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="jp_top_header_left_wrapper">
+                    <div class="jp_top_header_left_cont">
+                        <p><i class="fa fa-phone"></i> &nbsp;Phone &nbsp;+123456789</p>
+                        <p class=""><i class="fa fa-envelope"></i> &nbsp;Email :&nbsp;<a href="#">Email@example.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="jp_top_header_right_wrapper">
+                    <div class="jp_top_header_right_cont">
+                        <ul>
+                            <li><a href="register.html"><i class="fa fa-user"></i>&nbsp; SIGN UP</a></li>
+                            <li><a href="login.html"><i class="fa fa-sign-in"></i>&nbsp; LOGIN</a></li>
+                        </ul>
+                    </div>
+                    <div class="jp_top_header_right__social_cont">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Top Header Wrapper End -->
 <!-- Header Wrapper Start -->
 <div class="jp_top_header_img_wrapper">
@@ -57,7 +91,7 @@ Purchase:
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm full_width">
                     <div class="gc_header_wrapper">
                         <div class="gc_logo">
-                            <a ><img src="{{ asset('bundles/images/header/logo2.png') }}" alt="Logo" title="Job Pro" class="img-responsive"></a>
+                            <a href="index.html"><img src="{{ asset('bundles/images/header/logo2.png')}}" alt="Logo" title="Job Pro" class="img-responsive"></a>
                         </div>
                     </div>
                 </div>
@@ -82,9 +116,9 @@ Purchase:
                                 <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Home&nbsp;<i class="fa fa-angle-down"></i></a>
                                     <!-- mega menu start -->
                                     <ul>
-                                        <li class="parent"><a href="/smartstartpi-dev/web/app_dev.php/">Home1</a></li>
-                                        <li class="parent"><a href="/smartstartpi-dev/web/app_dev.php/">Home2</a></li>
-                                        <li class="parent"><a href="/smartstartpi-dev/web/app_dev.php/">Home3</a></li>
+                                        <li class="parent"><a href="index.html">Home1</a></li>
+                                        <li class="parent"><a href="index_II.html">Home2</a></li>
+                                        <li class="parent"><a href="index_map.html">Home3</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Job&nbsp;<i class="fa fa-angle-down"></i></a>
@@ -115,8 +149,8 @@ Purchase:
                                         <li class="parent"><a href="about.html">About-Us</a></li>
                                         <li class="parent"><a href="404%20error.html">404</a></li>
                                         <li class="parent"><a href="add_postin.html">Add-Posting</a></li>
-                                        <li class="parent"><a href="/smartstartpi-dev/web/app_dev.php/login">Login</a></li>
-                                        <li class="parent"><a href="/smartstartpi-dev/web/app_dev.php/register">Register</a></li>
+                                        <li class="parent"><a href="login.html">Login</a></li>
+                                        <li class="parent"><a href="register.html">Register</a></li>
                                         <li class="parent"><a href="pricing.html">Pricing</a></li>
                                     </ul>
                                 </li>
@@ -130,7 +164,7 @@ Purchase:
 
                                     </ul>
                                 </li>
-                                <li class="gc_main_navigation parent"><a href="/smartstartpi-dev/web/app_dev.php/contact" class="gc_main_navigation">Contact</a></li>
+                                <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact</a></li>
                             </ul>
                         </div>
                         <!-- mainmenu end -->
@@ -140,7 +174,7 @@ Purchase:
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6">
                                         <div class="gc_logo">
-                                            <a href="/smartstartpi-dev/web/app_dev.php/"><img src="{{ asset('bundles/images/header/logo2.png') }}" alt="Logo" title="Grace Church"></a>
+                                            <a href="index.html"><img src="{{ asset('bundles/images/header/logo2.png')}}" alt="Logo" title="Grace Church"></a>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6">
@@ -163,7 +197,7 @@ Purchase:
                                                         <ul class="cd-secondary-dropdown is-hidden">
                                                             <li class="go-back"><a href="#0">Menu</a></li>
                                                             <li>
-                                                                <a href="/smartstartpi-dev/web/app_dev.php/">Home1</a>
+                                                                <a href="index.html">Home1</a>
                                                             </li>
                                                             <!-- .has-children -->
 
@@ -227,8 +261,8 @@ Purchase:
                                                             <li><a href="about.html">About-Us</a></li>
                                                             <li><a href="404%20error.html">404</a></li>
                                                             <li><a href="add_postin.html">Add-Posting</a></li>
-                                                            <li><a href="/smartstartpi-dev/web/app_dev.php/login">Login</a></li>
-                                                            <li><a href="/smartstartpi-dev/web/app_dev.php/register">Register</a></li>
+                                                            <li><a href="login.html">Login</a></li>
+                                                            <li><a href="register.html">Register</a></li>
                                                             <li><a href="pricing.html">Pricing</a></li>
                                                             <!-- .has-children -->
 
@@ -266,13 +300,13 @@ Purchase:
                                                     </li>
                                                     <!-- .has-children -->
                                                     <li>
-                                                        <a href="/smartstartpi-dev/web/app_dev.php/contact">Contact</a>
+                                                        <a href="contact.html">Contact</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/smartstartpi-dev/web/app_dev.php/register">Sign Up</a>
+                                                        <a href="register.html">Sign Up</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/smartstartpi-dev/web/app_dev.php/login">Login</a>
+                                                        <a href="login.html">Login</a>
                                                     </li>
 
                                                 </ul>
@@ -305,19 +339,38 @@ Purchase:
 </div>
 <!-- Header Wrapper End -->
 <!-- jp Tittle Wrapper Start -->
-
-
+<div class="jp_tittle_main_wrapper">
+    <div class="jp_tittle_img_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="jp_tittle_heading_wrapper">
+                    <div class="jp_tittle_heading">
+                        <h2>Add-Posting</h2>
+                    </div>
+                    <div class="jp_tittle_breadcrumb_main_wrapper">
+                        <div class="jp_tittle_breadcrumb_wrapper">
+                            <ul>
+                                <li><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
+                                <li>Add-Posting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jp Tittle Wrapper End -->
-
-<!-- jp login wrapper start -->
-
-<!-- jp login wrapper end -->
-<!-- jp Newsletter Wrapper Start -->
-{% block body %}
-
 {% endblock %}
-{% block fos_user_content %}
-{% endblock fos_user_content %}
+<!-- jp ad post Wrapper Start -->
+<!-- jp ad post Wrapper End -->
+<!-- jp downlord Wrapper Start -->
+{% block content %}
+{% endblock %}
+<!-- jp downlord Wrapper End -->
+{% block footer %}
+<!-- jp Newsletter Wrapper Start -->
 <div class="jp_main_footer_img_wrapper">
     <div class="jp_newsletter_img_overlay_wrapper"></div>
     <div class="jp_newsletter_wrapper">
@@ -325,8 +378,7 @@ Purchase:
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="jp_newsletter_text">
-
-                        <img src="{{ asset('bundles/images/content/news_logo.png') }}" class="img-responsive" alt="news_logo" />
+                        <img src="{{ asset('bundles/images/content/news_logo.png')}}" class="img-responsive" alt="news_logo" />
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -345,7 +397,7 @@ Purchase:
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="jp_footer_logo_wrapper">
                         <div class="jp_footer_logo">
-                            <a href="#"><img src="{{ asset('bundles/images/content/resume_logo.png') }}" alt="footer_logo"/></a>
+                            <a href="#"><img src="{{ asset('bundles/images/content/resume_logo.png')}}" alt="footer_logo"/></a>
                         </div>
                     </div>
                 </div>
@@ -442,18 +494,19 @@ Purchase:
 </div>
 <!-- jp footer Wrapper End -->
 <!--main js file start-->
-<script src="{{ asset('bundles/js/jquery_min.js') }}"></script>
-<script src="{{ asset('bundles/js/bootstrap.js') }}"></script>
-<script src="{{ asset('bundles/js/jquery.menu-aim.js') }}"></script>
-<script src="{{ asset('bundles/js/jquery.countTo.js') }}"></script>
-<script src="{{ asset('bundles/js/jquery.inview.min.js') }}"></script>
-<script src="{{ asset('bundles/js/owl.carousel.js') }}"></script>
-<script src="{{ asset('bundles/js/modernizr.js') }}"></script>
-<script src="{{ asset('bundles/js/jquery.magnific-popup.js') }}"></script>
-<script src="{{ asset('bundles/js/custom_II.js') }}"></script>
+<script src="{{ asset('bundles/js/jquery_min.js')}}"></script>
+<script src="{{ asset('bundles/js/bootstrap.js')}}"></script>
+<script src="{{ asset('bundles/js/jquery.menu-aim.js')}}"></script>
+<script src="{{ asset('bundles/js/jquery.countTo.js')}}"></script>
+<script src="{{ asset('bundles/js/jquery.inview.min.js')}}"></script>
+<script src="{{ asset('bundles/js/owl.carousel.js')}}"></script>
+<script src="{{ asset('bundles/js/modernizr.js')}}"></script>
+<script src="{{ asset('bundles/js/jquery.magnific-popup.js')}}"></script>
+<script src="{{ asset('bundles/js/custom_II.js')}}"></script>
 <!--main js file end-->
 </body>
 
 
-<!-- Mirrored from www.webstrot.com/html/jobpro/job_light/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Feb 2019 18:49:34 GMT -->
+<!-- Mirrored from www.webstrot.com/html/jobpro/job_light/add_postin.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Feb 2019 18:49:34 GMT -->
 </html>
+{% endblock %}

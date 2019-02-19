@@ -1,0 +1,22 @@
+{% extends 'formulaire.html.twig' %}
+{% block content %}
+    
+
+
+    <html>
+    </html>
+    <table border="2">
+        <tr><th>ID</th><th>DateDebut</th><th>Pays</th><th>Action</th><th>Delete</th></tr>
+        {% for tache in taches %}
+            <tr>
+                <td> {{ tache.id }}</td>
+                <td>{{ tache.dateDebut|date }}</td>
+                <td>{{ tache.dateFin|date }}</td>
+                <td>{{ tache.description }}</td>
+                <td>{{ tache.idAgenda.id }}</td>
+                <td><a href="{{ path("taches_update",{'id':tache.id}) }}">Modifier</a></td>
+                <td><a href="{{ path("taches_delete",{'id':tache.id}) }}">Delete</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

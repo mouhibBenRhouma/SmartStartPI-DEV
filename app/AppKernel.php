@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new MissionBundle\MissionBundle(),
             new ChallengeBundle\ChallengeBundle(),
             new GestionContactBundle\GestionContactBundle(),
+            new AgendaBundle\AgendaBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

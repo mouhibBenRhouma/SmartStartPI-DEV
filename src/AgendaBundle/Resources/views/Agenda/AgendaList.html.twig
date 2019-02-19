@@ -1,0 +1,88 @@
+{% extends 'formulaire.html.twig' %}
+{% block content %}
+<html>
+</html>
+    <div class="jp_pricing_main_wrapper">
+        <div class="container">
+            <div class="row">
+    {% for agenda in agendas %}
+                {% if agenda.type=="mensuel" %}
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="pricing_box1_wrapper pricing_border_box1_wrapper">
+                        <div class="box1_heading_wrapper">
+                            <h4>{{ agenda.nom }}</h4>
+                        </div>
+                        <div class="price_box1_wrapper">
+                            <div class="price_box1">
+                                <h1>$<span>{{ agenda.type }}</span></h1>
+                            </div>
+                        </div>
+                        <div class="pricing_cont_wrapper">
+                            <div class="pricing_cont">
+                                <ul>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;{{ agenda.datedebut|date }}</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;{{ agenda.datefin|date }}</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;{{ agenda.idprojet.id }}</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;{{ agenda.idfonctionnalite.id }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing_btn_wrapper">
+                            <div class="pricing_btn1">
+                                <ul>
+                                    <li><a href="{{ path("agenda_update",{'id':agenda.id}) }}"><i class="fa fa-plus-circle"></i>Modifier</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="{{ path("agenda_delete",{'id':agenda.id}) }}"><i class="fa fa-plus-circle"></i>Supprimer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="jp_pricing_label_wrapper">
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                {% elseif agenda.type=="hebdomadaire" %}
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="pricing_box1_wrapper pricing_border_box2_wrapper">
+                        <div class="box1_heading_wrapper box2_heading_wrapper">
+                            <h4>{{ agenda.nom }}</h4>
+                        </div>
+                        <div class="price_box1_wrapper">
+                            <div class="price_box2">
+                                <h1><span>{{ agenda.type }}</span></h1>
+                            </div>
+                        </div>
+                        <div class="pricing_cont_wrapper">
+                            <div class="pricing_cont">
+                                <ul>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;DateDebut:{{ agenda.datedebut|date }}</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;DateFin:{{ agenda.datefin|date }}</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;Id Projet:{{ agenda.idprojet.id }}</li>
+                                    <li><i class="fa fa-plus-circle"></i> &nbsp;&nbsp;Id fonctionnalites:{{ agenda.idfonctionnalite.id }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing_btn_wrapper">
+                            <div class="pricing_btn2">
+                                <ul>
+                                    <li><a href="{{ path("agenda_update",{'id':agenda.id}) }}"><i class="fa fa-plus-circle"></i>Modifier</a></li>
+                                </ul>
+                            </div>
+                            <div class="pricing_btn2">
+                                <ul>
+                            <li><a href="{{ path("agenda_delete",{'id':agenda.id}) }}"><i class="fa fa-plus-circle"></i>Supprimer</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="jp_pricing_label_wrapper">
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,6 +1,10 @@
+agenda:
+    resource: "@AgendaBundle/Resources/config/routing.yml"
+    prefix:   /agenda
+
 gestion_contact:
     resource: "@GestionContactBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /contact
 
 challenge:
     resource: "@ChallengeBundle/Resources/config/routing.yml"
